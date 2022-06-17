@@ -113,7 +113,8 @@ function modal() {
 function deleteuser(id){
   users.forEach((item,index) => {
 if(item.id==id){
-  users.splice(index);
+  console.log(index);
+  users.splice(index,index+1);
   console.log(users);
   loadTableData(users);
 }
