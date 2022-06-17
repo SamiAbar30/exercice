@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="" id="container">
+      <div class="box" id="">
+        <table class="table" id="table-users">
+          <thead class="table-head" id="table-head-users">
+            <tr class="table-row" id="table-head-row-users">
+              <th class="table-row-head" id="table-row-head-id">ID</th>
+              <th class="table-row-head" id="table-row-head-date-creation">
+                Date de creation
+              </th>
+              <th class="table-row-head" id="table-row-head-Etat">Etat</th>
+              <th class="table-row-head" id="table-row-head-Nom">Nom</th>
+              <th class="table-row-head" id="table-row-head-Prenom">Prenom</th>
+              <th class="table-row-head" id="table-row-head-nameuser">
+                Nom d'utilisateur
+              </th>
+              <th class="table-row-head" id="table-row-head-Matricule">
+                Matricule
+              </th>
+              <th class="table-row-head" id="table-row-head-Action">Action</th>
+            </tr>
+          </thead>
+          <tbody class="table-body" id="table-body-users"></tbody>
+        </table>
+      </div>
+
+      <div class="box" id="">
+        <button class="button" id="add-button">Ajouter utitlisateur</button>
+      </div>
+
+      <div id="myModal" class="modal box">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>Ajout d'utilisateurs</h1>
+          <div class="grid-container">
+            <div class="grid-item input-item"><p>Nom</p><input type="text" id="nom"></div>
+            <div class="grid-item input-item"><p>Prenom</p><input type="text" id="prenom"></div>
+            <div class="grid-item input-item"><p>Etat</p><input type="text" id="etat"></div>
+            <div class="grid-item input-item"><p>Nom d'utilisateur</p><input type="text" id="nomuser"></div>
+            <div class="grid-item input-item"><p>Date de creation</p><input type="datetime-local" id="date-creation"></div>
+            <div class="grid-item input-item item"><p>Matricule</p><input type="text" id="matricule"></div>
+          </div>
+          <div><button class="button"  id="save-button" onclick="adduser()">Enregistrer</button></div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
