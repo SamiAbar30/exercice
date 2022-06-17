@@ -133,7 +133,7 @@ const matricule=document.getElementById("matricule").value;
 if(nom!=""||prenom!=""||etat!=""||nomuser!=""||date_creation!=""||matricule!=""){
  
   users = [...users,{
-    id: 112313213,
+    id: rendomID() ,
     createdDate: date_creation,
     status: etat,
     firstName: prenom,
@@ -147,6 +147,16 @@ if(nom!=""||prenom!=""||etat!=""||nomuser!=""||date_creation!=""||matricule!="")
 }
 
 
+}
+
+function rendomID(){
+  var id='';
+  for(let i = 0; i < 9; i++){
+      id=id+''+Math.floor(Math.random() * 10);
+  }
+  
+  console.log(id);
+  return id;
 }
 modal();
 loadTableData(users);
